@@ -6,6 +6,10 @@ const taskSchema = mongoose.Schema(
             type: String,
             required: [true, "add a task"],
         },
+        author: {
+            type: String,
+            default: "anoyymous",
+        },
         completed: {
             type: Boolean,
             required: true,
